@@ -14,10 +14,10 @@
   <email>bjori@php.net</email>
   <active>yes</active>
  </lead>
- <date>2011-11-27</date>
- <time>01:28:39</time>
+ <date>2012-04-13</date>
+ <time>10:39:28</time>
  <version>
-  <release>0.3.0</release>
+  <release>0.3.1</release>
   <api>0.3.0</api>
  </version>
  <stability>
@@ -27,16 +27,15 @@
  <license>New BSD</license>
  <notes>
 QA release
-Bug #11824	phpcs/Coding Standards issues highlighted in IS.php
-Bug #11864	test of postalCodes when run from CVS doesn&apos;t work
-Bug #14867	Can&apos;t run unit tests from CVS without warnings
+Bug #19030	running test suite modifies data/IS_postcodes.txt (for PEAR QA team)
+Bug #19031	remove error_reporting (for PEAR QA team)
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
    <file baseinstalldir="/" md5sum="0e7f583763241a6f4630951bb47ebd65" name="data/IS_gotuskra.txt" role="data" />
    <file baseinstalldir="/" md5sum="19ee2ca4589fe432dfdcc926b38f5340" name="data/IS_postcodes.txt" role="data" />
    <file baseinstalldir="/" md5sum="43ce4b70c3562a68892e478c9ebd08f9" name="tests/IS_address.phpt" role="test" />
-   <file baseinstalldir="/" md5sum="d18b5e6225acaaea6174a26bda3ddeea" name="tests/IS_phoneNumber.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="c9422fd45eefa365403919979b8deef3" name="tests/IS_phoneNumber.phpt" role="test" />
    <file baseinstalldir="/" md5sum="39baede0acdb82752d5809665cfd19ce" name="tests/validate_IS.phpt" role="test" />
    <file baseinstalldir="/" md5sum="c2d61f8aacef342a73a88dd813ac7e0f" name="Validate/IS.php" role="php">
     <tasks:replace from="@DATADIR@" to="data_dir" type="pear-config" />
@@ -142,6 +141,23 @@ QA release
 Bug #11824	phpcs/Coding Standards issues highlighted in IS.php
 Bug #11864	test of postalCodes when run from CVS doesn&apos;t work
 Bug #14867	Can&apos;t run unit tests from CVS without warnings
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.3.1</release>
+    <api>0.3.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2012-04-13</date>
+   <license>New BSD</license>
+   <notes>
+QA release
+Bug #19030	running test suite modifies data/IS_postcodes.txt (for PEAR QA team)
+Bug #19031	remove error_reporting (for PEAR QA team)
    </notes>
   </release>
  </changelog>
